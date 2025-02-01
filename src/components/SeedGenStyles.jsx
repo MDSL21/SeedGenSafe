@@ -13,6 +13,27 @@ const Container = styled.div`
   border: 3px solid #24292e;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
+  margin-bottom: 10px;
+
+  .loading-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 100%;
+    gap: 1px;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
 
   @media screen and (max-width: 768px) {
     max-width: 100%;

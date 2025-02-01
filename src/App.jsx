@@ -13,6 +13,21 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
   }
+
+  .rotate-icon {
+    margin-left: 8px;
+    animation: rotate 2s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
 `;
 
 function App() {
