@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Container = styled.div`
-  max-width: 640px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,7 +10,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 3px solid #24292e;
+  /* border: 3px solid #24292e; */
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
   margin-bottom: 10px;
@@ -93,13 +93,30 @@ const WalletInfo = styled.div`
 const Address = styled.span`
   color: #24292e;
   width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+
+  img {
+    width: 20px;
+    border-radius: 100px;
+  }
 `;
 
 const PrivateKey = styled.span`
   color: #24292e;
   width: 100%;
   height: 50px;
-  overflow-wrap: unset;
+  overflow-wrap: unset !important;
+  display: flex;
+  flex-direction: row;
+
+  svg {
+    min-width: 22px;
+    min-height: 22px;
+    margin-right: 5px;
+  }
 `;
 
 const KeysDiv = styled.div`
